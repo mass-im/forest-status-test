@@ -7,6 +7,10 @@ sites:
     url: https://forest.host
   - name: api.forest.host
     url: https://api.forest.host/v1/auth/providers
+  - name: api.tinytrees.nl
+    url: https://api.tinytrees.nl/v1/auth/providers
+  - name: app.forest.host
+    url: https://app.forest.host/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
