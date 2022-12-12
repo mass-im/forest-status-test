@@ -16,7 +16,7 @@ sites:
     __dangerous__body_down: '"Status":"Down"'
 
 status-website:
-  theme: forest
+  themeUrl: https://cdn.statically.io/gh/mass-im/forest-status-test/master/assets/forest.css
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   #cname: demo.upptime.js.org
