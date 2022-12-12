@@ -76,19 +76,19 @@
     "url": "$LEAF_URL",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "leaf-cloud-network",
-    "status": "down",
-    "uptime": "0.00%",
-    "uptimeDay": "0.00%",
-    "uptimeWeek": "0.00%",
-    "uptimeMonth": "0.00%",
-    "uptimeYear": "0.00%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "status": "up",
+    "uptime": "36.52%",
+    "uptimeDay": "36.52%",
+    "uptimeWeek": "36.52%",
+    "uptimeMonth": "36.52%",
+    "uptimeYear": "36.52%",
+    "time": 404,
+    "timeDay": 404,
+    "timeWeek": 404,
+    "timeMonth": 404,
+    "timeYear": 404,
     "dailyMinutesDown": {
-      "2022-12-12": 0
+      "2022-12-12": 5
     }
   }
 ]
