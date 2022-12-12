@@ -17,6 +17,7 @@ sites:
 
 status-website:
   themeUrl: https://mass-im.github.io/forest-status-test/forest.css
+  themeUrl: https://raw.githubusercontent.com/mass-im/forest-status-test/master/assets/forest.css
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   #cname: demo.upptime.js.org
