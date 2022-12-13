@@ -3,10 +3,6 @@ owner: mass-im # Your GitHub organization or username, where this repository liv
 repo: forest-status-test # The name of this repository
 
 sites:
-  - name: Forest.host
-    url: https://forest.host
-  - name: api.forest.host
-    url: https://api.forest.host/v1/auth/providers
   - name: api.tinytrees.nl
     url: https://api.tinytrees.nl/v1/auth/providers
   - name: app.forest.host
@@ -14,6 +10,18 @@ sites:
   - name: Leaf.cloud network
     url: $LEAF_URL
     __dangerous__body_down: '"Status":"Down"'
+  - name: balancer0
+    check: "tcp-ping"
+    url: 45.135.56.67
+  - name: compute0
+    check: "tcp-ping"
+    url: 45.135.56.231
+  - name: compute1
+    check: "tcp-ping"
+    url: 45.135.56.97
+  - name: compute2
+    check: "tcp-ping"
+    url: 45.135.56.134
 
 status-website:
   themeUrl: https://cdn.statically.io/gh/mass-im/forest-status-test/master/assets/forest.css
