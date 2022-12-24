@@ -3,25 +3,25 @@ owner: mass-im # Your GitHub organization or username, where this repository liv
 repo: forest-status-test # The name of this repository
 
 sites:
-  - name: api.tinytrees.nl
-    url: https://api.tinytrees.nl/v1/auth/providers
-  - name: app.forest.host
-    url: https://app.forest.host/
   - name: Leaf.cloud network
     url: $LEAF_URL
     __dangerous__body_down: '"Status":"Down"'
-  - name: balancer0
-    check: "tcp-ping"
-    url: 45.135.56.67
-  - name: compute0
-    check: "tcp-ping"
-    url: 45.135.56.231
-  - name: compute1
-    check: "tcp-ping"
-    url: 45.135.56.97
-  - name: compute2
-    check: "tcp-ping"
-    url: 45.135.56.134
+  - name: Balancer
+    url: $STATS_URL
+    __dangerous__body_down: '"varnish":"DOWN"'
+    __dangerous__body_degraded: '"varnish":"DEGRADED"'
+    headers:
+        - "X-api-key: $STATS_KEY"
+  - name: Platform
+    url: $STATS_URL
+    __dangerous__body_down: '"platform":"DOWN"'
+    __dangerous__body_degraded: '"platform":"DEGRADED"'
+    headers:
+        - "X-api-key: $STATS_KEY"
+  - name: api.tinytrees.nl
+    url: https://api.tinytrees.nl/v1/auth/providers
+  - name: app.tinytrees.nl
+    url: https://app.tinytrees.nl/
 
 status-website:
   themeUrl: https://cdn.statically.io/gh/mass-im/forest-status-test/master/assets/forest.css
